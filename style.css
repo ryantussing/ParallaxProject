@@ -1,0 +1,21 @@
+body {
+    overflow-x: hidden;
+}
+#mntbck {
+    border: 1px solid green;
+    width: 100vw;
+    z-index: 1;
+}
+#fstbck {
+    border: 1px solid blue;
+    width: 100vw;
+    z-index: 2;
+}
+
+/*
+NEXT STEP:
+position the mountain and the forest on top of each other. i believe the best way to do this
+is going to be using "position: ;". stack overflow suggestion says wrap the img's in a div and set that to relative,
+then set each image to absolute. this sounds viable. basically making a container that follows page flow, but the 
+elements within it stack. could work
+*/
