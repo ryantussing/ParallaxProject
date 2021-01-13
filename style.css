@@ -1,21 +1,32 @@
 body {
     overflow-x: hidden;
 }
-#mntbck {
-    border: 1px solid green;
-    width: 100vw;
-    z-index: 1;
-}
-#fstbck {
-    border: 1px solid blue;
-    width: 100vw;
-    z-index: 2;
-}
+    #imgcontainer {
+        /* border: 10px solid darkslategrey; */
+        position: relative;
+            left: -5px;
+            top: -8px;
+        width: 100vw;
+        height: auto;
+    }
+        #mntbck {
+            /* border: 1px solid green; */
+            position: absolute;
+            width: 100vw;
+            z-index: 1;
+            height: 100vh;
+        }
+        #fstbck {
+            /* border: 1px solid blue; */
+            position: absolute;
+                top: 50vh;
+            width: 100vw;
+            z-index: 2;
+            height: 50vh;
+        }
 
 /*
 NEXT STEP:
-position the mountain and the forest on top of each other. i believe the best way to do this
-is going to be using "position: ;". stack overflow suggestion says wrap the img's in a div and set that to relative,
-then set each image to absolute. this sounds viable. basically making a container that follows page flow, but the 
-elements within it stack. could work
+work on creating javascript that will allow me to make a scrolling effect. i think after that i will work on adding
+new elements, like div's in the body to hold text, but i can see that not working due to my lack of knowledge.
 */
