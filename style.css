@@ -6,29 +6,46 @@ body {
         position: relative;
             left: -8px;
             top: -8px;
-        width: 100vw;
+        width: auto;
         height: auto;
     }
         #mntbck {
+            animation: mountain 6s;
             /* border: 1px solid green; */
             position: absolute;
-            width: 100vw;
+            width: 1600px;
             z-index: 1;
-            height: 100vh;
+            height: 900px;
         }
-        #fstbck {
-            animation: forest 4s;
+            @keyframes mountain {
+                0% {transform: translateY(0); transform: scale(1.0);}
+                50% {transform: translateY(300px); transform: scale(1.5);}
+                100% {transform: translateY(0); transform: scale(1.0);}
+            }
+        #fstbck1 {
+            animation: forest 6s;
             /* border: 1px solid blue; */
             position: absolute;
-                top: 50vh;
-            width: 100vw;
+                top: 450px;
+            width: 1600px;
             z-index: 2;
-            height: 50vh;
+            height: 450px;
+        }
+        #fstbck2 {
+            animation: forest 6s;
+            /* border: 1px solid blue; */
+            position: absolute;
+                /* top: 50vh; */
+            width: 1600px;
+            z-index: 2;
+            height: 450px;
         }
             @keyframes forest {
-                from {scale: 1.0;}
-                to {scale: 3.0;}
+                0% {transform: scale(1.0);}
+                50% {transform: scale(1.5);}
+                100% {transform: scale(1.0);}
             }
+            
 
 /*
 NEXT STEP:
@@ -40,4 +57,9 @@ css animation i have programmed above will do the animation once and return it t
 js animation is what i really want to work. the css is basically a test for function. however, that's not working.
 and neither is the js. i need to make sure scrollY outputs in js so that i know it's at least moving. and then 
 figure what's up with the css if i need to
+
+update: currently i got the animations to work. now i am trying to figure out how to get the scroll bar to work and
+give me a number in js, and also i have to figure out how to make the page longer than just the images (probably get
+the scrollY value but set it so that the page doesn't translate down until a certain point, and then animations
+in between)
 */
