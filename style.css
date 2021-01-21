@@ -10,7 +10,7 @@ body {
         height: auto;
     }
         #mntbck {
-            animation: mountain 6s;
+            /* animation: mountain 6s; */
             /* border: 1px solid green; */
             position: absolute;
             width: 1600px;
@@ -23,7 +23,7 @@ body {
                 100% {transform: translateY(0); transform: scale(1.0);}
             }
         #fstbck1 {
-            animation: forest 6s;
+            /* animation: forest 6s; */
             /* border: 1px solid blue; */
             position: absolute;
                 top: 450px;
@@ -32,7 +32,7 @@ body {
             height: 450px;
         }
         #fstbck2 {
-            animation: forest 6s;
+            /* animation: forest 6s; */
             /* border: 1px solid blue; */
             position: absolute;
                 /* top: 50vh; */
